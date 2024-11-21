@@ -1,0 +1,122 @@
+@font-face {
+    font-family: "Outfit-Regular";
+    src: url("../fonts/outfit/static/Outfit-Regular.ttf");
+}
+@font-face {
+    font-family: "Outfit-Medium";
+    src: url("../fonts/outfit/static/Outfit-Medium.ttf");        
+}
+@font-face {
+    font-family: "Outfit-Black";
+    src: url("../fonts/outfit/static/Outfit-Black.ttf");    
+}
+@font-face {
+    font-family: "YoungSerif";
+    src: url("../fonts/young-serif/YoungSerif-Regular.ttf");   
+    
+}
+
+p , li , td:first-child{
+    font-family: "Outfit-Regular";
+    color: hsl(0, 1%, 39%);
+}
+
+@media (max-width:640px){
+    body{
+        display: contents;
+    }
+}
+
+.body{
+    background-color: #f3e5d8;
+    padding: 10% 20% 10% 20%;       
+}
+.main-container{
+    background-color: white;
+    border-radius: 2% / 1%;
+    padding: 5%;
+}
+.main-container-text{     
+    padding: 0% 3% 0% 3%;   
+}
+.image-container{
+    display: flex;       
+}
+
+.image-header{   
+   margin: auto;
+   padding: auto;
+   height: auto;
+   width: 100%;
+   border-radius: 2% / 3.5%;
+}
+
+.h1{
+    font-family: "YoungSerif";
+    font-size: 35px;
+    color: black;
+}
+
+.items-container{    
+    list-style-type: initial;
+    list-style-position: initial;    
+}
+.Ingredients-list li::marker{
+    list-style-type: square;
+    color:hsl(336.16deg 44.79% 31.96%);
+}
+.Prepairation-list{    
+    border-radius: 2% / 7%;   
+    border-style: hidden;    
+    background-color:hsl(322.5deg 100% 98.43%);    
+}
+.Ingredients-list, .Instructions-list{    
+    padding-inline-start : 3%;
+}
+li{
+    padding-bottom: 2%;       
+}
+.Prepairation-list {
+    padding-top:1%;
+    padding-bottom: 1%;
+}
+.Prepairation-list li {
+    margin-left: 2%;
+}
+.Prepairation-list li::marker{
+    color:hsl(336.16deg 44.79% 31.96%);
+}
+.Prepairation-list b {    
+    padding-left: 3%;
+}
+.nutrition-table{
+    border-collapse: collapse;
+    width: 100%;
+    line-height: 300%;
+}
+.nutrition-table td{
+    padding-left: 3%;    
+}
+.Instructions-list li::marker , .nutrition-table td:nth-child(2){
+    color: hsl(15deg 38.64% 34.51%);
+    font-family: "Outfit-Black"; 
+}
+
+.nutrition-table tr:not(tr:first-child){    
+    border-top-style: solid ;
+    border-top-width: 1px;
+    border-top-color: hsl(0, 1%, 39%);    
+}
+h2 {    
+    color:hsl(15deg 38.64% 34.51%);    
+    font-family: "YoungSerif" !important;
+}
+h3 {
+    color:hsl(336.16deg 44.79% 31.96%);
+    font-family: "Outfit-Medium";
+    margin-left: -2%;
+}
+hr{
+    padding-right: 5%;
+    padding-left: 5%;
+}
